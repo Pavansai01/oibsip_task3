@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Temperature Converter</title>
+	<link rel="stylesheet" type="text/css" href="temp.css">
+</head>
+<body>
+	<div class="converter">
+		<h2>Temperature Converter</h2>
+		<div class="input">
+			<label for="temp">Enter the temperature:</label>
+			<input type="number" id="temp" placeholder="Enter temperature...">
+		</div>
+		<div class="select">
+			<label for="unit">Choose the unit:</label>
+			<select id="unit">
+				<option value="celsius">Celsius</option>
+				<option value="fahrenheit">Fahrenheit</option>
+				<option value="kelvin">Kelvin</option>
+			</select>
+		</div>
+		<div class="output">
+			<label for="result">Converted Temperature:</label>
+			<input type="number" id="result" disabled>
+		</div>
+		<div class="buttons">
+			<button id="convertCelsius">Convert to Celsius</button>
+			<button id="convertFahrenheit">Convert to Fahrenheit</button>
+			<button id="convertKelvin">Convert to Kelvin</button>
+			<button id="reset">Reset</button>
+		</div>
+		<div class="info">
+			<p>This temperature converter can convert between Celsius, Fahrenheit, and Kelvin. You can enter a temperature value in any of these units, and then choose the unit you want to convert it to. To perform the conversion, simply click one of the conversion buttons. To reset the form, click the reset button.</p>
+		</div>
+	</div>
+	<script src="temp.js"></script>
+</body>
+</html>
